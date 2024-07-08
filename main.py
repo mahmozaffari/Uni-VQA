@@ -132,10 +132,10 @@ with open('dataset/vqa2_data.pkl', 'rb') as f:
         val_annotations_df = data['val_annotations_df']
     else:
         val_annotations_df = data['test_annotations_df']
-    train_q_embedds = data['train_q_embedds']
-    train_i_embedds = data['train_i_embedds']
-    val_q_embedds = data['val_q_embedds']
-    val_i_embedds = data['val_i_embedds']
+    train_q_embedds = None #data['train_q_embedds']
+    train_i_embedds = None #data['train_i_embedds']
+    val_q_embedds = None #data['val_q_embedds']
+    val_i_embedds = None #data['val_i_embedds']
     train_captions = data['train_captions']
     val_captions = data['val_captions']
 
