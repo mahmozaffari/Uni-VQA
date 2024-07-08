@@ -1,8 +1,12 @@
 # Uni-VQA
-Unified VQA
 
-Download the content from the below link:
+This repository contains the codes for the EMNLP submission titled "General Knowledge is Power: Uncertainty-Aware Integration of LLMs for Reliable, Accurate, and Cost-Effective Visual Question Answering".
 
-https://drive.google.com/drive/folders/1Y2G5mkW72wKCjib0kmVF3BjjfFNkRHcA?usp=drive_link
+# Instructions:
 
-This includes, answer candiates, examples, etc.
+## Precomputed Data
+The precomputed data necessary for running the proposed LLM-based inference and evaluation framework is provided in the following [Link](https://drive.google.com/drive/folders/1Y2G5mkW72wKCjib0kmVF3BjjfFNkRHcA?usp=drive_link). This includes:
+
+- Outputs of each individual VQA model (task-specific): These are the predictions from various VQA models.
+- Answer Candidates Folder: Contains the answer candidates for each VQA model, which are necessary for running answer-candidate augmented LLM inference.
+- Examples Folder: Contains the in-context examples computed based on BLIP-embedding similarities.
