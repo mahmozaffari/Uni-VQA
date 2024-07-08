@@ -20,5 +20,10 @@ To perform answer-candidate augmented LLM-based inference, execute the following
                --val_answer_candidates_path $base_dir/answer_candidates/${model}_${method}_val.csv \
                --test_answer_candidates_path $base_dir/answer_candidates/${model}_${method}_test.csv \
                --use_answer_candidates True --dataset vqa2 \
-               --evaluation_set 'val' \
+               --evaluation_set $split \
                --num_candidates k1 k2 k3
+
+- to run on the test and validation splits set the $split to 'test', and 'val' respectively.
+- specify the number of candidates with one or more integer numbers indicating the number of answer-candidates provided as in prompt.
+- Add --part n/N to partition the test into N parts, and do inference on the nth part.
+
